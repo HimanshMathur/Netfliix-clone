@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Netflix Clone - Movies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix image" class="logo" />
+      </div>
+      <div class="navbar-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="tv-shows.html" class="nav-link">TV Shows</a>
+        <a href="movies.html" class="nav-link active">Movies</a>
+        <a href="#" class="nav-link">New & Popular</a>
+        <a href="my-list.html" class="nav-link">My List</a>
+      </div>
+      <div class="navbar-right">
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search" class="search-input" />
+        </div>
+        <i class="fas fa-bell"></i>
+        <a href="profile.html" class="profile-icon">
+        <img src="profile image.jpg" alt="Profile image" class="profile-icon" />
+        </a>
+      </div>
+    </nav>
+
+    <!-- Movies Section -->
+    <div class="container">
+      <section class="content-section">
+        <h2 class="section-title">Movies</h2>
+        <div class="genre-filter">
+          <select class="genre-select">
+            <option>All Genres</option>
+            <option>Action</option>
+            <option>Thriller</option>
+            <option>Romance</option>
+          </select>
+        </div>
+        <div class="content-row">
+          <div class="carousel-controls">
+            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="content-card" data-id="movie1" style="background-image: url('profile\ image.jpg');">
+            <div class="netflix-badge">N</div>
+            <div class="overlay-bottom">
+              <h3 class="card-title">Avengers:The Endgame</h3>
+              <div class="overlay-control">
+                <div class="control-btn play-btn"><i class="fas fa-play"></i></div>
+                <div class="control-btn check-btn" data-action="add-to-list"><i class="fas fa-plus"></i></div>
+                <div class="control-btn thumbs-btn"><i class="fas fa-thumbs-up"></i></div>
+                <div class="control-btn more-btn"><i class="fas fa-info-circle"></i></div>
+              </div>
+              <div class="overlay-info">
+                <div class="info-batch">R</div>
+                <div class="info-batch">Action</div>
+                <div class="info-batch">HD</div>
+              </div>
+            </div>
+          </div>
+          <div class="content-card" data-id="movie2" style="background-image: url('finaldestination.jpg');">
+            <div class="netflix-badge">N</div>
+            <div class="overlay-bottom">
+              <h3 class="card-title">Final destination:The bloodlines</h3>
+              <div class="overlay-control">
+                <div class="control-btn play-btn"><i class="fas fa-play"></i></div>
+                <div class="control-btn check-btn" data-action="add-to-list"><i class="fas fa-plus"></i></div>
+                <div class="control-btn thumbs-btn"><i class="fas fa-thumbs-up"></i></div>
+                <div class="control-btn more-btn"><i class="fas fa-info-circle"></i></div>
+              </div>
+              <div class="overlay-info">
+                <div class="info-batch">R</div>
+                <div class="info-batch">Crime</div>
+                <div class="info-batch">HD</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Netflix Clone. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
